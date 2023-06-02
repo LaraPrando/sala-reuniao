@@ -1,0 +1,252 @@
+body {   
+    
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+
+
+.principal {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100% 0%;
+    grid-template-rows: 100px 600px 53px;
+    grid-template-areas: "cabecalho cabecalho"
+                         "secao barra-lateral"
+                          "rodape rodape";
+ }
+
+ 
+
+header {
+    grid-area: cabecalho;
+    background-color: #591C09;
+}
+.logo {
+    position: absolute;
+width: 150px;
+height: 150px;
+left: 10px;
+top: 0px;
+
+}
+.titulo {
+    position: absolute;
+width: 430px;
+height: 400px;
+left: 156px;
+top: -70px;
+
+font-family: 'Kalam';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 102px;
+
+color: #FFFFFF;
+}
+
+section {
+    grid-area: secao;
+    
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: double;
+    margin-left: 55%;
+    margin-top: 8%;
+     box-shadow: 0px 0px 10px black;
+     text-align: center;
+
+}
+
+.container_listar {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: double;
+    margin-left: 33%;
+    margin-top: 8%;
+     box-shadow: 10px 10px 20px black;
+     text-align: center;
+
+}
+
+.container_compra {
+    margin: 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    border: 1px radial-gradient(50% 50% at 50% 50%, #C25F28 0%, #632400 100%);
+   
+}
+.button {
+    text-align: center;
+    font-family: 'Kalam';
+    color: rgb(43, 40, 46);
+    font-weight: bold;
+    font-size: 16pt;
+    background-color: #782106;
+}
+
+.item {
+    flex:1;
+    margin: 0px;
+    padding: 0 10px;
+    background: #591C09;
+    text-decoration-color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+.lanche-item{
+    display: inline;
+   text-align: center;
+}
+
+.lanche-item img{
+    width: 190px;
+    height: 190px;
+
+    
+}
+
+
+
+.img1 {
+    position: absolute;
+width: 404px;
+height: 340px;
+left: 150px;
+top: 240px;
+}
+.img2 {
+    position: absolute;
+width: 404px;
+height: 340px;
+left: 40px;
+top: 260px;
+
+}
+.pr {
+    font-size: 35px;
+    font-family: monospace;
+    color:#fdfdfd;
+    margin-right: 400px;
+    margin-left: 400px;
+    letter-spacing: 7px;
+    text-align: center;
+    }
+
+footer {
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-evenly;
+} 
+.parte1 {
+    width: 100%;
+    background-color: #591C09;
+}
+.elipse {
+    position: absolute;
+width: 10px;
+height: 10px;
+left: 1476px;
+top: 698px;
+}
+#menu {
+    text-align: center;
+    font-family: 'Kalam';
+    color: rgb(43, 40, 46);
+    font-weight: bold;
+    font-size: 16pt;
+    background-color: #782106;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+#menu a:hover {
+    text-decoration: none;
+    color: #9a5b13;
+
+}
+
+#menu li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+.info {
+    position: absolute;
+width: 84px;
+height: 39px;
+left: 1350px;
+top: 670px;
+
+font-family: 'Kalam';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 51px;
+
+color: #ffffff;
+}
+.local {
+        position: absolute;
+    width: 84px;
+    height: 39px;
+    left: 1170px;
+    top: 670px;
+    
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51px;
+    
+    color: #ffffff;
+    
+}
+.ca {
+    position: absolute;
+    width: 84px;
+    height: 39px;
+    left: 1040px;
+    top: 670px;
+    
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51px;
+    
+    color: #ffffff;
+}
+
+@media(max-width: 768px) {
+    body {
+        margin: 0 15px;
+    }
+    .principal, .parte1, .parte2, .parte3 {
+        width: 100%;
+    }  
+    .parte2 {
+        order:initial;
+    }
+}
+
+.fundo {
+    background: radial-gradient(50% 50% at 50% 50%, #C25F28 0%, #632400 100%);
+}
+
